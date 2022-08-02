@@ -1,10 +1,12 @@
-import { Box, Image, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Input, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 import styled from "@emotion/styled";
 
-const WrapperStyle = styled(Box)``;
+const WrapperStyle = styled(Box)`
+  cursor: pointer;
+`;
 
 const defaultImageSize = "150px";
 function InvoiceImage() {
@@ -38,7 +40,11 @@ function InvoiceImage() {
       {preview ? (
         <Image src={preview} alt="preview-image" />
       ) : (
-        <Text p={2}>Drag & drop a logo file or click to upload</Text>
+        <Flex h="full" align="center" justify="center">
+          <Text color="gray.600" fontSize="sm" p={2}>
+            Drag & drop a logo file or click to upload
+          </Text>
+        </Flex>
       )}
     </WrapperStyle>
   );
