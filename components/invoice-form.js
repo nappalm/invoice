@@ -1,5 +1,6 @@
 import { Flex, Text, Input, Box } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
+import { DatePicker } from "chakra-ui-date-input";
 
 const InvoiceForm = () => {
   const { register, handleSubmit } = useForm();
@@ -13,7 +14,7 @@ const InvoiceForm = () => {
           <Text flexShrink={0} as="label">
             Invoice No.:
           </Text>
-          <Input {...register("location")} placeholder="City, State ZIP" />
+          <Input {...register("location")} placeholder="####" />
         </Flex>
 
         <Flex align="center" gap={1}>
@@ -26,13 +27,13 @@ const InvoiceForm = () => {
           <Text flexShrink={0} as="label">
             Invoice Date:
           </Text>
-          <Input {...register("location")} placeholder="City, State ZIP" />
+          <DatePicker placeholder="Invoice Date" onChange={() => {}} />
         </Flex>
         <Flex align="center" gap={1}>
           <Text flexShrink={0} as="label">
             Due Date:
           </Text>
-          <Input {...register("location")} placeholder="City, State ZIP" />
+          <DatePicker placeholder="Due date" onChange={() => {}} />
         </Flex>
       </form>
     </Box>
