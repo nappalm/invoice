@@ -16,13 +16,6 @@ const InvoiceForm = () => {
           </Text>
           <Input {...register("location")} placeholder="####" />
         </Flex>
-
-        <Flex align="center" gap={1}>
-          <Text flexShrink={0} as="label">
-            Invoice Date:
-          </Text>
-          <Input {...register("invoice_date")} placeholder="Invoice Date" />
-        </Flex>
         <Flex align="center" gap={1}>
           <Text flexShrink={0} as="label">
             Invoice Date:
