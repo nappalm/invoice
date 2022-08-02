@@ -47,6 +47,7 @@ const Home = () => {
       borderRadius="lg"
       padding={5}
       boxShadow={["none", "none", cssShadow]}
+      bg="white"
     >
       <Flex
         minH={["auto", "auto", "873px"]}
