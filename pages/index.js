@@ -19,7 +19,7 @@ import { useState } from "react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useForm } from "react-hook-form";
 
-const boxShadow =
+const cssShadow =
   "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px";
 
 const Home = () => {
@@ -43,11 +43,10 @@ const Home = () => {
 
   return (
     <Box
-      boxShadow="rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
       position="relative"
       borderRadius="lg"
       padding={5}
-      boxShadow={["none", "none", boxShadow]}
+      boxShadow={["none", "none", cssShadow]}
     >
       <Flex
         minH={["auto", "auto", "873px"]}
