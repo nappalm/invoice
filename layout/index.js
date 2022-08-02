@@ -13,7 +13,7 @@ const Main = ({ children }) => (
       <meta property="og:image" content="/card.jpg" />
       <title>Invoice App</title>
     </Head>
-    <Container maxW="container.md" pt={14}>
+    <Container maxW={["100%", "100%", "container.md"]} pt={14}>
       {children}
     </Container>
   </Box>
